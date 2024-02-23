@@ -35,8 +35,10 @@ main{
     background-color: white;
 }
 footer{
+    background-color: gray;
+    width: max-content;
     display: block;
-    padding-top: 60%;
+    position: absolute;
 }
 nav{
     background-color:rgb(133, 191, 70);
@@ -62,40 +64,68 @@ ul{
 #CopyRight{
     float: right;
 }
-aside{
-    float: right;
-    width:fit-content ;
+
+
+html{
+    width: 50%;
+    align-self: center;
+    margin: auto;
     background-color: white;
-    margin: 10px;
-    border-radius: 10px;
-    height: fit-content;
 }
-#TextArea{
-    float: left;
-    width:65% ;
-    background-color: white;
-    margin: 10px;
-    border-radius: 10px;
-    height: 65%;
+body {
+    background-color:rgb(207, 207, 207);
 }
-#twitter{
-    text-align: center;
+header{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
-table{
-    font-family: sans-serif;
-    border-collapse: collapse;
+h1 {
+    color: black;
+    text-align: left;
+    height: 11%;
+    width: 45%;
+    font-size: 50px;
+    display: inline-block;
+    padding: 2%;
+}
+nav{
+    background-color:rgb(133, 191, 70);
+    height: 5%;
     width: 100%;
 }
-table td,table th{
-    border: 2px solid black
+li{
+    display: inline;
+    padding:3%;
 }
-table tr:nth-child(even){
-    background-color:F0F0F0;
+
+ul{
+    padding: 1.5%;
+    display: block;
 }
-table tr:hover{
-    background-color: lime;
+
+
+#Logo{
+    inline-size: auto;
+    display: inline-block;
+    width:40%;
+    height: 20%;
+    float: right;
+    padding: 1%;
 }
-table th{
-    background-color:rgb(133, 191, 70);
-    
+#TextArea{
+
+}
+#CopyRight{
+    float: right;
+}
+
+footer{
+    display: block;
+    padding-top: 60%;
+}
+#WeekDay{
+    display: block;
+    background-color: aquamarine;
+    width: 10px;
+    height: 10px;
 }
