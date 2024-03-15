@@ -6,6 +6,14 @@ html{
     height: 125%;
 }
 body{
+    html{
+    width: 75%;
+    align-self: center;
+    margin: auto;
+    background-color: white;
+    height: 125%;
+}
+body{
     background-color:rgb(207, 207, 207);
     text-align: left;
 }
@@ -35,10 +43,8 @@ main{
     background-color: white;
 }
 footer{
-    background-color: gray;
-    width: max-content;
     display: block;
-    position: absolute;
+    padding-top: 60%;
 }
 nav{
     background-color:rgb(133, 191, 70);
@@ -64,23 +70,58 @@ ul{
 #CopyRight{
     float: right;
 }
-
-
-html{
-    width: 50%;
-    align-self: center;
-    margin: auto;
+aside{
+    float: right;
+    width:fit-content ;
     background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+    height: fit-content;
 }
-body {
-    background-color:rgb(207, 207, 207);
+#TextArea{
+    float: left;
+    width:65% ;
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+    height: 65%;
+}
+#twitter{
+    text-align: center;
+}
+table{
+    font-family: sans-serif;
+    border-collapse: collapse;
+    //width: 100%;
+}
+table td,table th{
+    border: 2px solid black
+}
+table tr:nth-child(even){
+    background-color:F0F0F0;
+}
+table tr:hover{
+    background-color: lime;
+}
+table th{
+    background-color:rgb(133, 191, 70);
+    
+}
+form,fieldset{
+    border-radius: 10px;
+    padding: 10px;
+}
+    text-align: left;
 }
 header{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-h1 {
+h1,h2,h3,h4,h5,h6,p{
+    font-family: sans-serif;
     color: black;
+}
+h1{
     text-align: left;
     height: 11%;
     width: 45%;
@@ -88,6 +129,19 @@ h1 {
     display: inline-block;
     padding: 2%;
 }
+h3{
+    font-size: 20px;
+}
+p{
+    font-size: 15px;
+}
+main{
+    background-color: white;
+}
+footer{
+    display: block;
+    padding-top: 60%;
+}
 nav{
     background-color:rgb(133, 191, 70);
     height: 5%;
@@ -97,13 +151,10 @@ li{
     display: inline;
     padding:3%;
 }
-
 ul{
     padding: 1.5%;
     display: block;
 }
-
-
 #Logo{
     inline-size: auto;
     display: inline-block;
@@ -112,20 +163,47 @@ ul{
     float: right;
     padding: 1%;
 }
-#TextArea{
-
-}
 #CopyRight{
     float: right;
 }
-
-footer{
-    display: block;
-    padding-top: 60%;
+aside{
+    float: right;
+    width:fit-content ;
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+    height: fit-content;
 }
-#WeekDay{
-    display: block;
-    background-color: aquamarine;
-    width: 10px;
-    height: 10px;
+#TextArea{
+    float: left;
+    width:65% ;
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+    height: 65%;
+}
+#twitter{
+    text-align: center;
+}
+table{
+    font-family: sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+table td,table th{
+    border: 2px solid black
+}
+table tr:nth-child(even){
+    background-color:F0F0F0;
+}
+table tr:hover{
+    background-color: lime;
+}
+table th{
+    background-color:rgb(133, 191, 70);
+    
+}
+form,fieldset{
+    border-radius: 10px;
+    padding: 10px;
 }

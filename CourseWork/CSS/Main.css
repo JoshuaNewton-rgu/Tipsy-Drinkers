@@ -1,90 +1,97 @@
-html{
-    width: 75%;
-    align-self: center;
-    margin: auto;
-    background-color: white;
-    height: 125%;
-}
 body{
     background-color:rgb(207, 207, 207);
-    text-align: left;
 }
 header{
+    background-color: rgb(207, 207, 207);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    padding: 10px;
+}
+#Logo{
+    height: 50px;
+    width: 50px;
+    float: left;
+    margin-right: 10px;
+    display: inline;
 }
 h1,h2,h3,h4,h5,h6,p{
     font-family: sans-serif;
     color: black;
 }
 h1{
-    text-align: left;
-    height: 11%;
-    width: 45%;
     font-size: 50px;
-    display: inline-block;
-    padding: 2%;
+    display: inline;
 }
 h3{
-    font-size: 20px;
+    font-size: 25px;
 }
 p{
-    font-size: 15px;
+    font-size:15px;
 }
 main{
-    background-color: white;
-}
-footer{
-    display: block;
-    padding-top: 60%;
-}
-nav{
-    background-color:rgb(133, 191, 70);
-    height: 5%;
-    width: 100%;
-}
-li{
-    display: inline;
-    padding:3%;
-}
-ul{
-    padding: 1.5%;
-    display: block;
-}
-#Logo{
-    inline-size: auto;
-    display: inline-block;
-    width:40%;
-    height: 20%;
-    float: right;
-    padding: 1%;
-}
-#CopyRight{
-    float: right;
+    background-color: rgb(207, 207, 207);
+    border-radius: 10px;
 }
 aside{
-    float: right;
-    width:fit-content ;
-    background-color: white;
-    margin: 10px;
     border-radius: 10px;
-    height: fit-content;
 }
-#TextArea{
+footer{
+    background-color: rgb(207, 207, 207);
+    border-radius: 10px;
+}
+/*Left Side*/
+#leftHandSide{
+    width:70% ;
     float: left;
-    width:65% ;
     background-color: white;
-    margin: 10px;
     border-radius: 10px;
-    height: 65%;
+    height: 600px;
 }
-#twitter{
+/*right Side*/
+#rightHandSide{
+    width: 25%;
+    float: right;
+    background-color: white;
+    height: 600px;
+}
+
+
+
+/*Nav bar Css*/
+nav{
+    background-color:rgb(133, 191, 70) ;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav li{
+    border: 2px;
+    background-color: rgb(207, 207, 207);
+    color: grey;
+    list-style-type: none;
+    float: left;
+    width: 15%;
+    padding: 16px;
+    height: 4%;
+}
+nav li a{
+    color: white;
     text-align: center;
+    text-decoration: none;
 }
+nav li:hover{
+    background-color: black;
+}
+.active{
+    background-color: rgb(133, 191, 70);
+}
+/*Event Calendar css*/
 table{
     font-family: sans-serif;
     border-collapse: collapse;
-    width: 100%;
+
 }
 table td,table th{
     border: 2px solid black
@@ -97,5 +104,5 @@ table tr:hover{
 }
 table th{
     background-color:rgb(133, 191, 70);
-    
+    color: white;
 }
