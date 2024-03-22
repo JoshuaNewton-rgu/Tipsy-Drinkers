@@ -118,7 +118,6 @@ nav li:hover{
     border-radius: 10px;
     width: 50%;
     margin-left:25%;
-    border: 2px solid black;
 }
 table{
     font-family: sans-serif;
@@ -127,6 +126,7 @@ table{
     height: 500px;
     margin-left: 2.5%;
     margin-top: 2%;
+
 }
 table td,table th{
     border: 2px solid black
@@ -135,7 +135,8 @@ table tr:nth-child(even){
     background-color:F0F0F0;
 }
 table tr:hover{
-    background-color: lime;
+    background-color: darkgreen;
+    color: white;
 }
 table th{
     background-color:rgb(133, 191, 70);
@@ -162,5 +163,11 @@ table th{
     margin-bottom: 10px;
 }
 #CenterText{
-    margin-left : 60px;
+    margin-left : 45px;
+}
+#whiteImgBorder{
+    background-color: white;
+    border-radius: 10px;
+    width: auto;
+    height: auto;
 }
