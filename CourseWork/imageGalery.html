@@ -32,48 +32,82 @@
         <!--Row one-->
         <div class="row">
             <div class="col-sm">
-                <img src="" alt="Image one" class="Gallery-img">
+                <img src="" alt="Image one" class="Gallery-img" id="img-Galery1">
             </div>
             <div class="col-sm">
-                <img src="" alt="Image two" class="Gallery-img">
+                <img src="" alt="Image two" class="Gallery-img" id="img-Galery2">
             </div>
             <div class="col-sm">
-                <img src="" alt="Image three" class="Gallery-img">
+                <img src="" alt="Image three" class="Gallery-img" id="img-Galery3">
             </div>
         </div>
         <!--Row two-->
         <div class="row">
             <div class="col-sm">
-                <img src="" alt="Image four" class="Gallery-img">
+                <img src="Images/DaveTheAlcy.jpg" alt="Image four" class="Gallery-img" id="img-Galery4">
             </div>
             <div class="col-sm">
-                <img src="" alt="Image five" class="Gallery-img">
+                <img src="Images/granny.jpg" alt="Image five" class="Gallery-img" id="img-Galery5">
             </div>
             <div class="col-sm">
-                <img src="" alt="Image six" class="Gallery-img">
+                <img src="Images/KermitDeFrog.jpeg" alt="Image six" class="Gallery-img" id="img-Galery6">
             </div>
         </div>
         <!--Row three-->
         <div class="row">
             <div class="col-sm">
-                <img src="" alt="Image seven" class="Gallery-img">
+                <img src="Images/NaBrown.jpg" alt="Image seven" class="Gallery-img" id="img-Galery7">
             </div>
             <div class="col-sm">
-                <img src="" alt="Image eight" class="Gallery-img">
+                <img src="Images/Roger.png" alt="Image eight" class="Gallery-img" id="img-Galery8">
             </div>
             <div class="col-sm">
-                <img src="" alt="Image nine" class="Gallery-img">
+                <img src="Images/salt-rimmed-shot-glasses-on-wooden-bar-counter.jpg" alt="Image nine" class="Gallery-img" id="img-Galery9">
             </div>
         </div>
     </div>
     </div>
+
+    <script>
+        var highlighter = false;
+        function addEventListenersToImages(){
+            for(let i=1;i<=9;i++){
+                const idNumber = "img-Galery" +i;
+                const img = document.getElementById(idNumber);
+                img.addEventListener("mouseover", highlight);
+                img.addEventListener("mouseout", delight);
+            }
+        }
+        function blur(){
+            const images = document.querySelectorAll('.Gallery-img');
+            images.forEach(img => {
+                img.style.filter = "blur(3px)"; // Adjust the blur strength as needed
+            });
+            if(highlighter==true){
+                img.style.filter = "none";
+            }
+        }
+
+        function highlight(){
+            this.style.border="solid green 2px";
+            this.style.filter="none";
+        }
+        function delight(){
+            this.style.border="none";
+            this.style.filter="blur(3px)"
+        }
+        addEventListenersToImages();
+        blur();
+
+    </script>
+
 </main>
         
 <aside></aside>
         
 <footer>
     <p>Please Drink Responsibly - Please note we are not Responsible for any injurys you may receive due to intake of alcohol</p>
-    <p id = "CopyRight">CopyRight Joshua Newton</p>
+    <p id = "CopyRight">CopyRight Joshua Newton 1st year</p>
 </footer>
 </body>
 </html>  

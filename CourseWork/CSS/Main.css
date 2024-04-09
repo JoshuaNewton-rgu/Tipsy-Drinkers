@@ -66,6 +66,7 @@ footer{
     height: 600px;
     margin-right: 5px;
     margin-top: 25px;
+    border-radius: 10px;
 }
 
 #twitter{
@@ -171,3 +172,16 @@ table th{
     width: auto;
     height: auto;
 }
+#loginSection{
+    float: right;
+    margin-top: 5%;
+}
+#loginButton{
+    width: 100px;
+    height: 50px;
+}
+#textFeild{
+    width: 250px;
+    height: 50px;
+}
+

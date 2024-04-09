@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <title>Tipsy Drink Society </title> 
         <link rel="stylesheet" href="CSS/Main.css"> 
@@ -8,8 +9,31 @@
 <header>
         <h1 id = "headerText">Tipsy Drinker Society</h1>
         <img src= "Images/Logo.png "alt="Our Mascot and logo" id="Logo"/>    
-              
-
+        
+<!--Login Section-->
+    <div  id="loginSection">
+        <form>
+            <input id="textFeild" type="text" name="Email" placeholder="Email">
+            <input id="textFeild" type="password" name="Password" placeholder="Password">
+            <button type="button" id="loginButton" onclick="login()">Login</button>
+        </form>
+        
+        <!--Script for login-->
+        <script>
+            var counter = 2;
+            var button = document.getElementById("loginButton");            
+            function login(){
+                if(counter % 2==0){
+                    alert('You have been logged in!');
+                    button.textContent = "Logout";            
+                }else{
+                    alert('You have been logged out!');
+                    button.textContent = "Login"
+                }
+                counter +=1;
+            }
+        </script>
+    </div>
 </header>
 <nav>
     <ul>
@@ -92,7 +116,7 @@
 </aside>    
 <footer>
     <p>Please Drink Responsibly - Please note we are not Responsible for any injurys you may receive due to intake of alcohol</p>
-    <p id = "CopyRight">CopyRight Joshua Newton</p>
+    <p id = "CopyRight">CopyRight Joshua Newton 1st year</p>
 </footer>
 </body>
 </html>  
