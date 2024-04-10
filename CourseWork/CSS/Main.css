@@ -131,6 +131,13 @@ table{
 }
 table td,table th{
     border: 2px solid black
+    
+}
+td{
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    font-size: 10pt;
 }
 table tr:nth-child(even){
     background-color:F0F0F0;
@@ -183,5 +190,11 @@ table th{
 #textFeild{
     width: 250px;
     height: 50px;
+}
+#weekday{
+    text-align: center;
+}
+#weekNum{
+    text-align: center;
 }
 
