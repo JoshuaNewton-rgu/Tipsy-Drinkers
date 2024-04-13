@@ -57,9 +57,8 @@
                 </ul>
             </div>
             <div id="TopMenu">
-            <button onclick="SubmitIngredients()" class="Spirits">Submit</button>
+            <button onclick="hideAll()" class="Spirits">Submit</button>
             </div>
-                <!--Cocktails That Can be selected go here-->
 
             <div id="cocktailPics">
 
@@ -149,7 +148,7 @@
 
 
 <!-- Creating the cocktail Card -->
-<div id="GinAndTonic" class="Hidden">
+<div id="GinAndT" class="Hidden">
     <h1>Gin And Tonic</h1>
     <img src="Images/Cocktails/GinAndT.jpg" alt="Gin And Tonic" width="200px" height="200px">
     <!-- Ingredients -->
@@ -340,7 +339,7 @@
                             <li>White Rum</li>
                             <li>Coconut Cream</li>
                             <li>Pineapple Juice</li>
-                            <li>Pineapple Slice and Cherry for Garnish</li>
+                            <li>Pineapple Slice and Cherry </li>
                             <li>Ice</li>
                         </ul>
                     </div>
@@ -400,7 +399,7 @@
                             <li>Orange Juice</li>
                             <li>Pineapple Juice</li>
                             <li>Grenadine</li>
-                            <li>Lime Wedge and Cherry for Garnish</li>
+                            <li>Lime Wedge and Cherry </li>
                             <li>Ice</li>
                         </ul>
                     </div>
@@ -417,9 +416,7 @@
                     </div>
                 </div>
                 <!-- End Of Card -->
-                
-                <!-- Continue adding more cocktail cards following the same structure -->
-                
+                                
                 <!-- Creating the cocktail Card -->
                 <div id="ScrewDriver" class="Hidden">
                     <h1>Screwdriver</h1>
@@ -461,7 +458,7 @@
                             <li>Peach Schnapps</li>
                             <li>Cranberry Juice</li>
                             <li>Orange Juice</li>
-                            <li>Orange Slice and Cherry for Garnish</li>
+                            <li>Orange Slice and Cherry</li>
                             <li>Ice</li>
                         </ul>
                     </div>
@@ -478,9 +475,7 @@
                     </div>
                 </div>
                 <!-- End Of Card -->
-                
-                <!-- Continue adding more cocktail cards following the same structure -->
-                
+                                
                 <!-- Creating the cocktail Card -->
                 <div id="TequilaSunrise" class="Hidden">
                     <h1>Tequila Sunrise</h1>
@@ -492,7 +487,7 @@
                             <li>Tequila</li>
                             <li>Orange Juice</li>
                             <li>Grenadine</li>
-                            <li>Orange Slice and Cherry for Garnish</li>
+                            <li>Orange Slice and Cherry </li>
                             <li>Ice</li>
                         </ul>
                     </div>
@@ -509,46 +504,187 @@
                     </div>
                 </div>
                 <!-- End Of Card -->
+
+<!--Display Buttons Go here-->
+        <div class="Scroll">
+
+                <button type="button" id="CockTailButton" onclick="AmarettoSour()">
+                    <img src="Images/Cocktails/AmarettoSour.jpg" alt="Pina Colada" id="CocktailPic" >
+                    <p>Amaretto Sour</p>
+                </button>
+
+                
+                <button type="button" id="CockTailButton" onclick="BahamaMama()">
+                    <img src="Images/Cocktails/BahamaMama.jpg" alt="Bahama Mama" id="CocktailPic" >
+                    <p>Bahama Mama</p>
+                </button>
+
+                <button type="button" id="CockTailButton" onclick="GinAndT()">
+                    <img src="Images/Cocktails/GinAndT.jpg" alt="Gin And Tonic" id="CocktailPic" >
+                    <p>Gin and Tonic</p>
+                </button>
+
+                <button type="button" id="CockTailButton" onclick="GinFizz()">
+                    <img src="Images/Cocktails/GinFizz.jpg" alt="Gin Fizz" id="CocktailPic" >
+                    <p>Gin Fizz</p>
+                </button>
+
+                <button type="button" id="CockTailButton" onclick="LongIsland()">
+                    <img src="Images/Cocktails/LongIsland.jpg" alt="Long Island Ice Tea" id="CocktailPic" >
+                    <p>Long Island Ice Tea</p>
+                </button>
+
+                <button type="button" id="CockTailButton" onclick="MaiTai()">
+                    <img src="Images/Cocktails/MaiTai.jpg" alt="MaiTai" id="CocktailPic" >
+                    <p>Mia Tai</p>
+                </button>
+                
+                <button type="button" id="CockTailButton" onclick="MalibuBayBreeze()">
+                    <img src="Images/Cocktails/MalibuBayBreeze.jpg" alt="MalibuBayBreeze" id="CocktailPic" >
+                    <p>Malibu Bay Breeze</p>
+                </button>
+                
+                <button type="button" id="CockTailButton" onclick="MoscowMule()">
+                    <img src="Images/Cocktails/MoscowMule.jpg" alt="MoscowMule" id="CocktailPic" >
+                    <p>Moscow Mule</p>
+                </button>
+
+                <button type="button" id="CockTailButton" onclick="pinaColada()">
+                    <img src="Images/Cocktails/PinaColada.jpg" alt="PinaColada" id="CocktailPic" >
+                    <p>PinaColada</p>
+                </button>
+
+                <button type="button" id="CockTailButton" onclick="RumAndCoke()">
+                    <img src="Images/Cocktails/RumAndCoke.jpg" alt="RumAndCoke" id="CocktailPic" >
+                    <p>Rum And Coke</p>
+                </button>
+
+                <button type="button" id="CockTailButton" onclick="RumPunch()">
+                    <img src="Images/Cocktails/RumPunch.jpg" alt="RumPunch" id="CocktailPic" >
+                    <p>Rum Punch</p>
+                </button>
+                
+                <button type="button" id="CockTailButton" onclick="ScrewDriver()">
+                    <img src="Images/Cocktails/ScrewDriver.jpg" alt="ScrewDriver" id="CocktailPic" >
+                    <p>ScrewDriver</p>
+                </button>
+
+                <button type="button" id="CockTailButton" onclick="SexOnBeach()">
+                    <img src="Images/Cocktails/SexOnBeach.jpg" alt="SexOnBeach" id="CocktailPic" >
+                    <p>Sex on the beach</p>
+                </button>
+                
+                <button type="button" id="CockTailButton" onclick="TequilaSunrise()">
+                    <img src="Images/Cocktails/TequilaSunrise.jpg" alt="TequilaSunrise" id="CocktailPic" >
+                    <p>Tequila Sunrise</p>
+                </button>
+                
+        </div>
+
+
+
+
+
+
+
+
+
             </div>
         </div>
 
         <script>
-            //Makes The Spirit Menu Drop Down
+    //Makes The Spirit Menu Drop Down
             function SpiritsMenu(){
                 document.getElementById("SpiritDrop").classList.toggle("show")
             }
-            //Makes The Mixer Menu Drop Down
+    //Makes The Mixer Menu Drop Down
             function MixerMenu(){
                 document.getElementById("MixerDrop").classList.toggle("show")
             }
-            //Checks what is selected and shows cocktails accordingly
+    //Checks what is selected and shows cocktails accordingly
             function SubmitIngredients(){
                 alert("Submit")
             }
-            function pinaColada(){
-                hideAll()
-                document.getElementById("PinaColada").classList.toggle("show");
-            }
-            function LongIsland(){
-                hideAll()
-                document.getElementById("LongIsland").classList.toggle("show");
-            }
-            function RumPunch(){
-                hideAll()
-                document.getElementById("RumPunch").classList.toggle("show");
-            }
+
+    //Cocktail Cards Controls
             function AmarettoSour(){
                 hideAll()
                 document.getElementById("AmarettoSour").classList.toggle("show");
             }
-            function SexOnBeach(){
+
+            function BahamaMama(){
                 hideAll()
-                document.getElementById("SexOnBeach").classList.toggle("show");
+                document.getElementById("BahamaMama").classList.toggle("show");
             }
+
             function Cosmopolitan(){
                 hideAll()
                 document.getElementById("Cosmopolitan").classList.toggle("show");
             }
+
+            function GinAndT(){
+                hideAll()
+                document.getElementById("GinAndT").classList.toggle("show");
+            }
+
+            function GinFizz(){
+                hideAll()
+                document.getElementById("GinFizz").classList.toggle("show");
+            }
+
+            function LongIsland(){
+                hideAll()
+                document.getElementById("LongIsland").classList.toggle("show");
+            }
+            
+            function MaiTai(){
+                hideAll()
+                document.getElementById("MaiTai").classList.toggle("show");
+            }
+
+            function MalibuBayBreeze(){
+                hideAll()
+                document.getElementById("MalibuBayBreeze").classList.toggle("show");
+            }
+            
+            
+            function MoscowMule(){
+                hideAll()
+                document.getElementById("MoscowMule").classList.toggle("show");
+            }
+
+            function pinaColada(){
+                hideAll()
+                document.getElementById("PinaColada").classList.toggle("show");
+            }
+
+            function RumAndCoke(){
+                hideAll()
+                document.getElementById("RumAndCoke").classList.toggle("show");
+            }
+
+            function RumPunch(){
+                hideAll()
+                document.getElementById("RumPunch").classList.toggle("show");
+            }
+            
+            function ScrewDriver(){
+                hideAll()
+                document.getElementById("ScrewDriver").classList.toggle("show");
+            }
+
+            function SexOnBeach(){
+                hideAll()
+                document.getElementById("SexOnBeach").classList.toggle("show");
+            }
+
+            function TequilaSunrise(){
+                hideAll()
+                document.getElementById("TequilaSunrise").classList.toggle("show");
+            }
+            
+
+    //Hide The Last Cocktail card
             function hideAll(){
                 var hide = document.getElementsByClassName("Hidden");
                 for(var i =0;i<hide.length;i++){
@@ -565,8 +701,9 @@
     </main>
     
     <aside>
+        <!--Favorites Buttons-->
         <div id="OurFavorites">
-            <h2>Our favorite Cocktails</h2>
+            <h2>Our Favorite Cocktails</h2>
     
             <div id="FavCocktails">
             <div id="Row">
@@ -604,5 +741,10 @@
     
         </div>
     </aside>
+
+    <footer>
+        <p>Please Drink Responsibly - Please note we are not Responsible for any injurys you may receive due to intake of alcohol</p>
+        <p id = "CopyRight">CopyRight Joshua Newton 1st year</p>
+    </footer>
 </body>
 </html>

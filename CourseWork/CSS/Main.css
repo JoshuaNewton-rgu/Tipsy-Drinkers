@@ -282,11 +282,12 @@ input[type=checkbox]{
     display: none;
     position: absolute;
     background-color:rgb(207, 207, 207);
-    width: 70%;
+    width: 55%;
     border: 1px solid black;
     z-index: 0;
     border-radius: 10px;
-    min-height: 700px;
+    height: 690px;
+    margin-left: 10%;
   }
   .Hidden h1{
     padding-left: 30%;
@@ -294,7 +295,7 @@ input[type=checkbox]{
   .Hidden img{
     padding-top: 50px;
     width :90%; 
-    height :500px;
+    height :400px;
     padding-left: 10%;
   }
   #Ingredients{
@@ -302,7 +303,7 @@ input[type=checkbox]{
     padding-left: 5%;
   }
   #Steps{
-    float: left;
+    float: right;
     padding-left: 10%;
 }
   #cocktailPics{
@@ -311,8 +312,11 @@ input[type=checkbox]{
     background-color: white;
     margin-top: 150px;
   }
-
-
+.Scroll{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
 
 .show{display: block;}
 
