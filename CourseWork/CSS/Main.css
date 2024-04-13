@@ -96,7 +96,7 @@ nav li{
     padding: 16px;
     height: 60px;
     /*Change the width as add more pages so it fits*/
-    width: 20%;
+    width: 14.25%;
     border: 2px solid rgb(120, 180, 60);
 }
 nav li a{
@@ -152,7 +152,7 @@ table th{
 }
 /*Carousel Css*/
 .w-100{
-    height: 60%;
+    height: 700px;
 }
 .ImageText {
     color:white;
@@ -169,6 +169,8 @@ table th{
 }
 #img-Galery .row{
     margin-bottom: 10px;
+    width: auto;
+    height: auto;
 }
 #CenterText{
     margin-left : 45px;
@@ -197,4 +199,120 @@ table th{
 #weekNum{
     text-align: center;
 }
+/*MIXOLOGY*/
+#OurFavorites{
+    width: 25%;
+    height:850px;
+    background-color: white;
+    border-radius: 10px;
+    float: left;
+    border: 0;
+    padding: 0;
+}   
+#OurFavorites h2{
+    text-align: center;
+}
+#Row{
+    padding: 0;
+    padding-top: 10px;
+}
+#TopMenu button{
+    width: 100%;
+    height: 75px;
+    border-radius: 10px;
+    background-color: rgb(133, 191, 70);
+}
+#TopMenu{
+    float: left;
+    padding: 25px;
+    width: 33.333%;
+}
+
+#CocktailMenu{
+    float: right;
+    width: 74%;
+    height: 850px;
+    border-radius: 10px;
+    background-color: white;
+}
+#CockTailButton{
+    width: 40%;
+    height:200px ;
+    margin-left: 5%;
+}
+#CocktailPic{
+    width: 100%;
+    height: 100px;
+}
+ul{
+    list-style-type:none ;
+}
+.DropDown-Content{
+    background-color:rgb(207, 207, 207);
+    width: 250px;
+    height: 220px;
+    border-radius: 10px;
+    float: left;
+}
+.DropDown-Content ul{
+    display: inline-block;
+}
+.DropDown-Content li{
+    height: 25px;
+    width: 250px;
+    padding-left: 25px;
+    padding-top: 10px;
+    font-size: 20px;
+
+}
+input[type=checkbox]{
+    width: 30px;
+    height: 20px;
+}
+.DropDown-Content{
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 230px;
+    border: 1px solid #ddd;
+    z-index: 1;
+  }
+  /*The Cocktail Cards*/
+  .Hidden{
+    display: none;
+    position: absolute;
+    background-color:rgb(207, 207, 207);
+    width: 70%;
+    border: 1px solid black;
+    z-index: 0;
+    border-radius: 10px;
+    min-height: 700px;
+  }
+  .Hidden h1{
+    padding-left: 30%;
+  }
+  .Hidden img{
+    padding-top: 50px;
+    width :90%; 
+    height :500px;
+    padding-left: 10%;
+  }
+  #Ingredients{
+    float: left;
+    padding-left: 5%;
+  }
+  #Steps{
+    float: left;
+    padding-left: 10%;
+}
+  #cocktailPics{
+    width: 100%;
+    height: 650px;
+    background-color: white;
+    margin-top: 150px;
+  }
+
+
+
+.show{display: block;}
 

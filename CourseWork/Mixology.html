@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tipsy Drink Society </title>
+    <link rel="stylesheet" href="CSS/Main.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<header>
+<h1 id = "headerText">Tipsy Drinker Society</h1>
+<img src= "Images/Logo.png "alt="Our Mascot and logo" id="Logo"/>    
+</header>
+
+<nav>
+    <ul>
+        <li><a href = index.html>Home Page</a></li> 
+        <li><a href = imageGalery.html>Image Gallery</a></li>
+        <li><a href = currentMembers.html>Current Members</a></li>
+        <li> <a href = eventCalendar.html>Our event Calendar</a></li>
+        <li><a href = contactUs.html>Contact Details</a></li>
+        <li class="active"><a href = Mixology.html>Mixology</a></li>
+    </ul>
+</nav>
+
+<body>
+    <main>
+        <div id="CocktailMenu">
+            <div id="TopMenu" class="TopMenuContent">
+                <button onclick="SpiritsMenu()" class="Spirits">Spirits</button>
+                <ul>
+                    <div id="SpiritDrop" class="DropDown-Content">
+                    <li><label><input type="checkbox" name="Amereto" value="Amereto">Amereto</label></li>
+                    <li><label><input type="checkbox" name="Archers" value="Archers">Archers</label></li>
+                    <li><label><input type="checkbox" name="Gin" value="Gin">Gin</label></li>
+                    <li><label><input type="checkbox" name="Malibu" value="Malibu">Malibu</label></li>
+                    <li><label><input type="checkbox" name="Morgans_Spiced" value="Morgans_Spiced">Morgans Spiced</label></li>
+                    <li><label><input type="checkbox" name="Tequila" value="Tequila">Tequila</label></li>
+                    <li><label><input type="checkbox" name="Vodka" value="Vodka">Vodka</label></li>
+                    <li><label><input type="checkbox" name="White_Rum" value="White_Rum">White Rum</label></li>
+                    </div>
+                </ul>
+            </div>
+            <div id="TopMenu">
+                <button onclick="MixerMenu()" class="Spirits">Mixers</button>
+                <ul>
+                    <div id="MixerDrop" class="DropDown-Content">
+                        <li><label><input type="checkbox" name=" Bitters" value="Bitters">Bitters</label></li>
+                        <li><label><input type="checkbox" name=" Coke" value="Coke">Coke</label></li>
+                        <li><label><input type="checkbox" name=" Coconut_creme" value="Coconut_creme">Coconut Creme</label></li>
+                        <li><label><input type="checkbox" name=" Cranberry_Juice" value="Cranberry_Juice">Cranberry Juice</label></li>
+                        <li><label><input type="checkbox" name=" Lemonade" value=" Lemonade"> Lemonade</label></li>
+                        <li><label><input type="checkbox" name=" Orange_Juice" value=" Orange_Juice"> Orange Juice</label></li>
+                        <li><label><input type="checkbox" name=" Pineapple_Juice" value="Pineapple_Juice">Pineapple Juice</label></li>
+                        <li><label><input type="checkbox" name=" Tonic" value="Tonic">Tonic</label></li>
+                    </div>
+                </ul>
+            </div>
+            <div id="TopMenu">
+            <button onclick="SubmitIngredients()" class="Spirits">Submit</button>
+            </div>
+                <!--Cocktails That Can be selected go here-->
+
+            <div id="cocktailPics">
+
+<!--Creating the cocktail Card-->
+<div id="AmarettoSour" class="Hidden">
+    <h1>Amaretto Sour</h1>
+    <img src="Images/Cocktails/AmarettoSour.jpg" alt="AmarettoSour" >
+    <!--Ingredients-->
+        <div id="Ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>Amaretto 60ml</li>
+                <li>Orange Juice 15ml</li>
+                <li>Lemon Juice (If available) 30ml</li>
+                <li>Ice</li>
+            </ul>
+        </div>
+        <!--How To Make-->
+        <div id="Steps">
+            <h2>Steps</h2>
+        <ol>
+            <li>Add Ice To Glass</li>
+            <li>Shake Ingredients Together</li>
+            <li>Strain into glass</li>
+            <li>Enjoy your drink</li>
+        </ol>
+    </div>
+</div>
+<!--End Of Card-->
+
+
+<!--Creating the cocktail Card-->
+<div id="BahamaMama" class="Hidden">
+    <h1>Bahama Mama</h1>
+    <img src="Images/Cocktails/BahamaMama.jpg" alt="BahamaMama" >
+    <!--Ingredients-->
+    <div id="Ingredients">
+        <h2>Ingredients</h2>
+        <ul>
+            <li>Morgans Spiced 45ml</li>
+            <li>Malibu 15ml</li>
+            <li>Pineapple Juice 30ml</li>
+            <li>Orange Juice 30ml</li>
+            <li>Ice</li>
+        </ul>
+    </div>
+    <!--How To Make-->
+    <div id="Steps">
+        <h2>Steps</h2>
+        <ol>
+            <li>Add Ice To Glass</li>
+            <li>Shake Ingredients Together</li>
+            <li>Strain into glass</li>
+            <li>Enjoy your drink</li>
+        </ol>
+    </div>
+</div>
+<!--End Of Card-->
+
+<!-- Creating the cocktail Card -->
+<div id="Cosmopolitan" class="Hidden">
+    <h1>Cosmopolitan</h1>
+    <img src="Images/Cocktails/Cosmopolitan.jpg" alt="Cosmopolitan" width="200px" height="200px">
+    <!-- Ingredients -->
+    <div id="Ingredients">
+        <h2>Ingredients</h2>
+        <ul>
+            <li>Vodka</li>
+            <li>Cranberry Juice</li>
+            <li>Lime Juice</li>
+            <li>Triple Sec</li>
+            <li>Ice</li>
+        </ul>
+    </div>
+    <!-- How To Make -->
+    <div id="Steps">
+        <h2>Steps</h2>
+        <ol>
+            <li>Add Ice To Glass</li>
+            <li>Shake Ingredients Together</li>
+            <li>Strain into glass</li>
+            <li>Enjoy your drink</li>
+        </ol>
+    </div>
+</div>
+<!-- End Of Card -->
+
+
+<!-- Creating the cocktail Card -->
+<div id="GinAndTonic" class="Hidden">
+    <h1>Gin And Tonic</h1>
+    <img src="Images/Cocktails/GinAndT.jpg" alt="Gin And Tonic" width="200px" height="200px">
+    <!-- Ingredients -->
+    <div id="Ingredients">
+        <h2>Ingredients</h2>
+        <ul>
+            <li>Gin</li>
+            <li>Tonic Water</li>
+            <li>Lime Wedges</li>
+            <li>Ice</li>
+        </ul>
+    </div>
+    <!-- How To Make -->
+    <div id="Steps">
+        <h2>Steps</h2>
+        <ol>
+            <li>Add Ice To Glass</li>
+            <li>Pour Gin and Tonic Water</li>
+            <li>Stir gently</li>
+            <li>Enjoy your drink</li>
+        </ol>
+    </div>
+</div>
+
+
+                <div id="GinFizz" class="Hidden">
+                    <h1>Gin Fizz</h1>
+                    <img src="Images/Cocktails/GinFizz.jpg" alt="Gin Fizz" width="200px" height="200px">
+                    <!-- Ingredients -->
+                    <div id="Ingredients">
+                        <h2>Ingredients</h2>
+                        <ul>
+                            <li>Gin</li>
+                            <li>Lemon Juice</li>
+                            <li>Simple Syrup</li>
+                            <li>Soda Water</li>
+                            <li>Ice</li>
+                        </ul>
+                    </div>
+                    <!-- How To Make -->
+                    <div id="Steps">
+                        <h2>Steps</h2>
+                        <ol>
+                            <li>Add Ice To Glass</li>
+                            <li>Shake Gin, Lemon Juice, and Simple Syrup</li>
+                            <li>Strain into glass</li>
+                            <li>Top with Soda Water</li>
+                            <li>Enjoy your drink</li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- End Of Card -->
+                
+                <!-- Creating the cocktail Card -->
+                <div id="LongIsland" class="Hidden">
+                    <h1>Long Island Iced Tea</h1>
+                    <img src="Images/Cocktails/LongIsland.jpg" alt="Long Island Iced Tea" width="200px" height="200px">
+                    <!-- Ingredients -->
+                    <div id="Ingredients">
+                        <h2>Ingredients</h2>
+                        <ul>
+                            <li>Vodka</li>
+                            <li>Rum</li>
+                            <li>Gin</li>
+                            <li>Tequila</li>
+                            <li>Lemonade</li>
+                            <li>Coke</li>
+                            <li>Lemon Wedge for Garnish</li>
+                            <li>Ice</li>
+                        </ul>
+                    </div>
+                    <!-- How To Make -->
+                    <div id="Steps">
+                        <h2>Steps</h2>
+                        <ol>
+                            <li>Add Ice To Glass</li>
+                            <li>Shake Vodka, Rum, Gin, Tequila, and Lemonade</li>
+                            <li>Strain into glass</li>
+                            <li>Top with Coke</li>
+                            <li>Garnish with Lemon Wedge</li>
+                            <li>Enjoy your drink</li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- End Of Card -->
+
+                <!--Creating the cocktail Card-->
+
+                <div id="MaiTai" class="Hidden">
+                    <h1>Mai Tai</h1>
+                    <img src="Images/Cocktails/MaiTai.jpg" alt="Mai Tai" width="200px" height="200px">
+                    <!-- Ingredients -->
+                    <div id="Ingredients">
+                        <h2>Ingredients</h2>
+                        <ul>
+                            <li>Light Rum</li>
+                            <li>Dark Rum</li>
+                            <li>Orange Curacao</li>
+                            <li>Orgeat Syrup</li>
+                            <li>Lime Juice</li>
+                            <li>Pineapple Juice</li>
+                            <li>Maraschino Cherry and Pineapple Wedge for Garnish</li>
+                            <li>Ice</li>
+                        </ul>
+                    </div>
+                    <!-- How To Make -->
+                    <div id="Steps">
+                        <h2>Steps</h2>
+                        <ol>
+                            <li>Add Ice To Glass</li>
+                            <li>Shake Light Rum, Dark Rum, Orange Curacao, Orgeat Syrup, Lime Juice, and Pineapple Juice</li>
+                            <li>Strain into glass</li>
+                            <li>Garnish with Maraschino Cherry and Pineapple Wedge</li>
+                            <li>Enjoy your drink</li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- End Of Card -->
+                
+                <!-- Creating the cocktail Card -->
+                <div id="MalibuBayBreeze" class="Hidden">
+                    <h1>Malibu Bay Breeze</h1>
+                    <img src="Images/Cocktails/MalibuBayBreeze.jpg" alt="Malibu Bay Breeze" width="200px" height="200px">
+                    <!-- Ingredients -->
+                    <div id="Ingredients">
+                        <h2>Ingredients</h2>
+                        <ul>
+                            <li>Malibu Rum</li>
+                            <li>Cranberry Juice</li>
+                            <li>Pineapple Juice</li>
+                            <li>Lime Wedge for Garnish</li>
+                            <li>Ice</li>
+                        </ul>
+                    </div>
+                    <!-- How To Make -->
+                    <div id="Steps">
+                        <h2>Steps</h2>
+                        <ol>
+                            <li>Add Ice To Glass</li>
+                            <li>Pour Malibu Rum, Cranberry Juice, and Pineapple Juice</li>
+                            <li>Stir gently</li>
+                            <li>Garnish with Lime Wedge</li>
+                            <li>Enjoy your drink</li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- End Of Card -->
+                
+                
+                <!-- Creating the cocktail Card -->
+                <div id="MoscowMule" class="Hidden">
+                    <h1>Moscow Mule</h1>
+                    <img src="Images/Cocktails/MoscowMule.jpg" alt="Moscow Mule" width="200px" height="200px">
+                    <!-- Ingredients -->
+                    <div id="Ingredients">
+                        <h2>Ingredients</h2>
+                        <ul>
+                            <li>Vodka</li>
+                            <li>Lime Juice</li>
+                            <li>Ginger Beer</li>
+                            <li>Lime Wedge for Garnish</li>
+                            <li>Ice</li>
+                        </ul>
+                    </div>
+                    <!-- How To Make -->
+                    <div id="Steps">
+                        <h2>Steps</h2>
+                        <ol>
+                            <li>Add Ice To Glass</li>
+                            <li>Combine Vodka and Lime Juice in glass</li>
+                            <li>Top with Ginger Beer</li>
+                            <li>Stir gently</li>
+                            <li>Garnish with Lime Wedge</li>
+                            <li>Enjoy your drink</li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- End Of Card -->
+                
+                <!-- Creating the cocktail Card -->
+                <div id="PinaColada" class="Hidden">
+                    <h1>Pina Colada</h1>
+                    <img src="Images/Cocktails/PinaColada.jpg" alt="Pina Colada" width="200px" height="200px">
+                    <!-- Ingredients -->
+                    <div id="Ingredients">
+                        <h2>Ingredients</h2>
+                        <ul>
+                            <li>White Rum</li>
+                            <li>Coconut Cream</li>
+                            <li>Pineapple Juice</li>
+                            <li>Pineapple Slice and Cherry for Garnish</li>
+                            <li>Ice</li>
+                        </ul>
+                    </div>
+                    <!-- How To Make -->
+                    <div id="Steps">
+                        <h2>Steps</h2>
+                        <ol>
+                            <li>Add Ice To Blender</li>
+                            <li>Blend White Rum, Coconut Cream, and Pineapple Juice</li>
+                            <li>Pour into glass</li>
+                            <li>Garnish with Pineapple Slice and Cherry</li>
+                            <li>Enjoy your drink</li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- End Of Card -->
+                
+                
+                <!-- Creating the cocktail Card -->
+                <div id="RumAndCoke" class="Hidden">
+                    <h1>Rum and Coke</h1>
+                    <img src="Images/Cocktails/RumAndCoke.jpg" alt="Rum and Coke" width="200px" height="200px">
+                    <!-- Ingredients -->
+                    <div id="Ingredients">
+                        <h2>Ingredients</h2>
+                        <ul>
+                            <li>Rum</li>
+                            <li>Coke</li>
+                            <li>Lime Wedge for Garnish</li>
+                            <li>Ice</li>
+                        </ul>
+                    </div>
+                    <!-- How To Make -->
+                    <div id="Steps">
+                        <h2>Steps</h2>
+                        <ol>
+                            <li>Add Ice To Glass</li>
+                            <li>Pour Rum over ice</li>
+                            <li>Top with Coke</li>
+                            <li>Stir gently</li>
+                            <li>Garnish with Lime Wedge</li>
+                            <li>Enjoy your drink</li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- End Of Card -->
+                
+                <!-- Creating the cocktail Card -->
+                <div id="RumPunch" class="Hidden">
+                    <h1>Rum Punch</h1>
+                    <img src="Images/Cocktails/RumPunch.jpg" alt="Rum Punch" width="200px" height="200px">
+                    <!-- Ingredients -->
+                    <div id="Ingredients">
+                        <h2>Ingredients</h2>
+                        <ul>
+                            <li>Rum</li>
+                            <li>Orange Juice</li>
+                            <li>Pineapple Juice</li>
+                            <li>Grenadine</li>
+                            <li>Lime Wedge and Cherry for Garnish</li>
+                            <li>Ice</li>
+                        </ul>
+                    </div>
+                    <!-- How To Make -->
+                    <div id="Steps">
+                        <h2>Steps</h2>
+                        <ol>
+                            <li>Add Ice To Glass</li>
+                            <li>Combine Rum, Orange Juice, Pineapple Juice, and Grenadine in glass</li>
+                            <li>Stir gently</li>
+                            <li>Garnish with Lime Wedge and Cherry</li>
+                            <li>Enjoy your drink</li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- End Of Card -->
+                
+                <!-- Continue adding more cocktail cards following the same structure -->
+                
+                <!-- Creating the cocktail Card -->
+                <div id="ScrewDriver" class="Hidden">
+                    <h1>Screwdriver</h1>
+                    <img src="Images/Cocktails/ScrewDriver.jpg" alt="Screwdriver" width="200px" height="200px">
+                    <!-- Ingredients -->
+                    <div id="Ingredients">
+                        <h2>Ingredients</h2>
+                        <ul>
+                            <li>Vodka</li>
+                            <li>Orange Juice</li>
+                            <li>Orange Slice for Garnish</li>
+                            <li>Ice</li>
+                        </ul>
+                    </div>
+                    <!-- How To Make -->
+                    <div id="Steps">
+                        <h2>Steps</h2>
+                        <ol>
+                            <li>Add Ice To Glass</li>
+                            <li>Pour Vodka over ice</li>
+                            <li>Top with Orange Juice</li>
+                            <li>Stir gently</li>
+                            <li>Garnish with Orange Slice</li>
+                            <li>Enjoy your drink</li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- End Of Card -->
+                
+                <!-- Creating the cocktail Card -->
+                <div id="SexOnBeach" class="Hidden">
+                    <h1>Sex On The Beach</h1>
+                    <img src="Images/Cocktails/SexOnBeach.jpg" alt="Sex On The Beach" width="200px" height="200px">
+                    <!-- Ingredients -->
+                    <div id="Ingredients">
+                        <h2>Ingredients</h2>
+                        <ul>
+                            <li>Vodka</li>
+                            <li>Peach Schnapps</li>
+                            <li>Cranberry Juice</li>
+                            <li>Orange Juice</li>
+                            <li>Orange Slice and Cherry for Garnish</li>
+                            <li>Ice</li>
+                        </ul>
+                    </div>
+                    <!-- How To Make -->
+                    <div id="Steps">
+                        <h2>Steps</h2>
+                        <ol>
+                            <li>Add Ice To Glass</li>
+                            <li>Shake Vodka, Peach Schnapps, Cranberry Juice, and Orange Juice</li>
+                            <li>Strain into glass</li>
+                            <li>Garnish with Orange Slice and Cherry</li>
+                            <li>Enjoy your drink</li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- End Of Card -->
+                
+                <!-- Continue adding more cocktail cards following the same structure -->
+                
+                <!-- Creating the cocktail Card -->
+                <div id="TequilaSunrise" class="Hidden">
+                    <h1>Tequila Sunrise</h1>
+                    <img src="Images/Cocktails/TequilaSunrise.jpg" alt="Tequila Sunrise" width="200px" height="200px">
+                    <!-- Ingredients -->
+                    <div id="Ingredients">
+                        <h2>Ingredients</h2>
+                        <ul>
+                            <li>Tequila</li>
+                            <li>Orange Juice</li>
+                            <li>Grenadine</li>
+                            <li>Orange Slice and Cherry for Garnish</li>
+                            <li>Ice</li>
+                        </ul>
+                    </div>
+                    <!-- How To Make -->
+                    <div id="Steps">
+                        <h2>Steps</h2>
+                        <ol>
+                            <li>Add Ice To Glass</li>
+                            <li>Pour Tequila and Orange Juice over ice</li>
+                            <li>Slowly pour Grenadine into glass, it should sink and create a sunrise effect</li>
+                            <li>Garnish with Orange Slice and Cherry</li>
+                            <li>Enjoy your drink</li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- End Of Card -->
+            </div>
+        </div>
+
+        <script>
+            //Makes The Spirit Menu Drop Down
+            function SpiritsMenu(){
+                document.getElementById("SpiritDrop").classList.toggle("show")
+            }
+            //Makes The Mixer Menu Drop Down
+            function MixerMenu(){
+                document.getElementById("MixerDrop").classList.toggle("show")
+            }
+            //Checks what is selected and shows cocktails accordingly
+            function SubmitIngredients(){
+                alert("Submit")
+            }
+            function pinaColada(){
+                hideAll()
+                document.getElementById("PinaColada").classList.toggle("show");
+            }
+            function LongIsland(){
+                hideAll()
+                document.getElementById("LongIsland").classList.toggle("show");
+            }
+            function RumPunch(){
+                hideAll()
+                document.getElementById("RumPunch").classList.toggle("show");
+            }
+            function AmarettoSour(){
+                hideAll()
+                document.getElementById("AmarettoSour").classList.toggle("show");
+            }
+            function SexOnBeach(){
+                hideAll()
+                document.getElementById("SexOnBeach").classList.toggle("show");
+            }
+            function Cosmopolitan(){
+                hideAll()
+                document.getElementById("Cosmopolitan").classList.toggle("show");
+            }
+            function hideAll(){
+                var hide = document.getElementsByClassName("Hidden");
+                for(var i =0;i<hide.length;i++){
+                    hide[i].classList.remove("show")
+                }
+            }
+            
+
+        </script>
+
+
+
+
+    </main>
+    
+    <aside>
+        <div id="OurFavorites">
+            <h2>Our favorite Cocktails</h2>
+    
+            <div id="FavCocktails">
+            <div id="Row">
+                <button type="button" id="CockTailButton" onclick="pinaColada()">
+                    <img src="Images/Cocktails/PinaColada.jpg" alt="Pina Colada" id="CocktailPic" >
+                    <p>Pina Colada</p>
+                </button>
+                <button type="button" id="CockTailButton" onclick="LongIsland()">
+                    <img src="Images/Cocktails/LongIsland.jpg" alt="Long island" id="CocktailPic" >
+                    <p>Long Island Iced</p>
+                </button>
+            </div>
+            <div id="Row">
+                <button type="button" id="CockTailButton" onclick="RumPunch()">
+                    <img src="Images/Cocktails/RumPunch.jpg" alt="Rum Punch" id="CocktailPic" >
+                    <p>Rum Punch</p>
+                </button>
+                <button type="button" id="CockTailButton" onclick="AmarettoSour()">
+                    <img src="Images/Cocktails/AmarettoSour.jpg" alt="AmarettoSour" id="CocktailPic" >
+                    <p>Amaretto Sour</p>
+                </button>
+            </div>
+            <div id="Row">
+                <button type="button" id="CockTailButton" onclick="SexOnBeach()">
+                    <img src="Images/Cocktails/SexOnBeach.jpg" alt="Sex On The Beach" id="CocktailPic" >
+                    <p>Sex on beach</p>
+                </button>
+                <button type="button" id="CockTailButton" onclick="Cosmopolitan()">
+                    <img src="Images/Cocktails/Cosmopolitan.jpg" alt="Cosmopolitan" id="CocktailPic" >
+                    <p>Cosmopolitan<p>
+                </button>
+            </div>
+            </div>
+            <h2>Click To See the recipes Now!</h2>
+    
+        </div>
+    </aside>
+</body>
+</html>
