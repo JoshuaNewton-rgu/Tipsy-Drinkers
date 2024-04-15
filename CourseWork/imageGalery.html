@@ -29,18 +29,19 @@
 
         
 <main>
+    <!--Creating the location for all nine pictures-->
     <div id="whiteImgBorder">
         <div id="img-Galery" class="container">
             <!--Row one-->
             <div class="row">
                 <div class="col-sm">
-                    <img src="" alt="Image one" class="Gallery-img" id="img-Galery1">
+                    <img src="Images/Cocktails/BahamaMama.jpg" alt="Image one" class="Gallery-img" id="img-Galery1">
                 </div>
                 <div class="col-sm">
-                    <img src="" alt="Image two" class="Gallery-img" id="img-Galery2">
+                    <img src="Images/Cocktails/GinAndT.jpg" alt="Image two" class="Gallery-img" id="img-Galery2">
                 </div>
                 <div class="col-sm">
-                    <img src="" alt="Image three" class="Gallery-img" id="img-Galery3">
+                    <img src="Images/Cocktails/MalibuBayBreeze.jpg" alt="Image three" class="Gallery-img" id="img-Galery3">
                 </div>
             </div>
             <!--Row two-->
@@ -71,7 +72,7 @@
         </div>
 
     <script>
-        var highlighter = false;
+        //Adds event listeners to check if the mouse goes over the images or goes off the images
         function addEventListenersToImages(){
             for(let i=1;i<=9;i++){
                 const idNumber = "img-Galery" +i;
@@ -80,33 +81,35 @@
                 img.addEventListener("mouseout", delight);
             }
         }
+        //Adds blur to the images on launching the page
         function blur(){
             const images = document.querySelectorAll('.Gallery-img');
             images.forEach(img => {
-                img.style.filter = "blur(3px)"; // Adjust the blur strength as needed
+                img.style.filter = "blur(3px)";
             });
             if(highlighter==true){
                 img.style.filter = "none";
             }
         }
-
+        //Is called when mouse is over any picture and adds the green border and removes the blur
         function highlight(){
             this.style.border="solid green 2px";
             this.style.filter="none";
         }
+        //is called when the mouse is removed and adds the blur back and removes the green border
         function delight(){
             this.style.border="none";
             this.style.filter="blur(3px)"
         }
+        //Adds event listeners so that it can detect when mouse is over
         addEventListenersToImages();
+        //Calling blur so that images are blured on launch
         blur();
 
     </script>
 
 </main>
-        
-<aside></aside>
-        
+                
 <footer>
     <p>Please Drink Responsibly - Please note we are not Responsible for any injurys you may receive due to intake of alcohol</p>
     <p id = "CopyRight">CopyRight Joshua Newton 1st year</p>
