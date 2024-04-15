@@ -316,13 +316,61 @@ input[type=checkbox]{
     width: 100%;
     height: 100%;
     overflow-x: hidden;
+
 }
 #close{
     float: right;
     margin: 15px;
     width: 45px;
     height: 45px;
+    font-size: 30px;
 }
 
 .show{display: block;}
 
+#AllCokctails{
+    width: 25%;
+    height:200px ;
+    margin-left: 5%;
+    margin-top: 25px;
+}
+#AllCokctails img{
+    width: 70%;
+    height: 160px;
+}
+
+/*Quiz Page Goes Here*/
+
+#picGuess{
+    width:40% ;
+    float: left;
+    background-color: white;
+    border-radius: 10px;
+    height: 95%;
+    margin: 5px;
+    margin-left: 5%;
+    margin-top: 25px;
+    border: solid grey 2px;
+}
+#brandGuess{
+    width: 40%;
+    float: right;
+    background-color: white;
+    height: 95%;
+    margin-right: 5%;
+    margin-top: 25px;
+    border-radius: 10px;
+    border: solid grey 2px;
+}
+#picGuess h1{
+    text-align: center;
+}
+#brandGuess h1{
+    text-align: center;
+}
+
+
+#fit{
+    height: 800px;
+    width: 100%;
+}
