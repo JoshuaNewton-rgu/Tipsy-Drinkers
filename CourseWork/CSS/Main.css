@@ -58,6 +58,7 @@ footer{
     margin-left: 5px;
     margin-top: 25px;
 }
+
 /*right Side*/
 #rightHandSide{
     width: 28%;
@@ -198,6 +199,11 @@ table th{
 }
 #weekNum{
     text-align: center;
+}
+#suggestions{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 /*MIXOLOGY*/
 #OurFavorites{
@@ -351,7 +357,45 @@ input[type=checkbox]{
     margin-left: 5%;
     margin-top: 25px;
     border: solid grey 2px;
+    text-align: center;
 }
+#picGuess img{
+    width: 70%;
+    height: 75%;
+    padding-top: 20px;
+}
+
+/*quiz*/
+#start{
+    width: 100%;
+    height: 100%;
+}
+#quiz{
+    width: 100%;
+    height: 100%;
+}
+#results{
+    width: 100%;
+    height: 100%;
+}
+.hide{
+    display: none;
+}
+
+
+
+
+
+#picGuess button{
+    width: 60%;
+    height: 10%;
+    border-radius: 10px;
+}
+
+
+
+
+
 #brandGuess{
     width: 40%;
     float: right;
@@ -361,12 +405,17 @@ input[type=checkbox]{
     margin-top: 25px;
     border-radius: 10px;
     border: solid grey 2px;
-}
-#picGuess h1{
     text-align: center;
 }
-#brandGuess h1{
-    text-align: center;
+#brandGuess img{
+    width: 70%;
+    height: 75%;
+    padding-top: 20px;
+}
+#brandGuess button{
+    width: 60%;
+    height: 10%;
+    border-radius: 10px;
 }
 
 
