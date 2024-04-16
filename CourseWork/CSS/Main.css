@@ -332,7 +332,9 @@ input[type=checkbox]{
     font-size: 30px;
 }
 
-.show{display: block;}
+.show{
+    display: block;
+}
 
 #AllCokctails{
     width: 25%;
@@ -345,9 +347,9 @@ input[type=checkbox]{
     height: 160px;
 }
 
-/*Quiz Page Goes Here*/
+/*Interesting Facts*/
 
-#picGuess{
+#Facts{
     width:40% ;
     float: left;
     background-color: white;
@@ -359,44 +361,7 @@ input[type=checkbox]{
     border: solid grey 2px;
     text-align: center;
 }
-#picGuess img{
-    width: 70%;
-    height: 75%;
-    padding-top: 20px;
-}
-
-/*quiz*/
-#start{
-    width: 100%;
-    height: 100%;
-}
-#quiz{
-    width: 100%;
-    height: 100%;
-}
-#results{
-    width: 100%;
-    height: 100%;
-}
-.hide{
-    display: none;
-}
-
-
-
-
-
-#picGuess button{
-    width: 60%;
-    height: 10%;
-    border-radius: 10px;
-}
-
-
-
-
-
-#brandGuess{
+#Tiktok{
     width: 40%;
     float: right;
     background-color: white;
@@ -406,19 +371,8 @@ input[type=checkbox]{
     border-radius: 10px;
     border: solid grey 2px;
     text-align: center;
-}
-#brandGuess img{
-    width: 70%;
-    height: 75%;
-    padding-top: 20px;
-}
-#brandGuess button{
-    width: 60%;
-    height: 10%;
-    border-radius: 10px;
-}
 
-
+}
 #fit{
     height: 800px;
     width: 100%;
