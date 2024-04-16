@@ -359,8 +359,9 @@ input[type=checkbox]{
     margin-left: 5%;
     margin-top: 25px;
     border: solid grey 2px;
-    text-align: center;
 }
+
+
 #Tiktok{
     width: 40%;
     float: right;
